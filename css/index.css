@@ -39,15 +39,25 @@
                 }
 
                 .content {
-                    width: 500px;
-                    margin: o auto;
+                    position: absolute;
+width: 499px;
+height: 499px;
+left: 120px;
+top: 214px;
                     }
-                    button {
+                    .content-1 {
                         position: absolute;
+width: 485px;
+height: 359px;
+left: 834px;
+top: 284px;
+                        }
+                    button {
                         width: 200px;
-                        height: 60px;
-                        left: 837px;
-                        top: 583px;
+height: 60px;
+left: 20px;
+top: 20px;
+
                         background: #FFD600;
                         border-radius: 5px;
 
@@ -67,4 +77,12 @@
                         font-size: 18px;
                         line-height: 28px;
                         color: #31373E;
+                    }
+                    footer {
+                        position: absolute;
+width: 1440px;
+height: 165px;
+left: 0px;
+top: 3058px;
+
                     }
