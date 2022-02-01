@@ -1,14 +1,25 @@
 .block-element {
     display: inline-block;
+    width: 30%;
     vertical-align: top;
     padding: 20px;
     }
     li {
         justify-content: space-between;
+        padding: 15px;
+        list-style-type: none;
+         
     }
+    a{
+        color: black; 
+    }
+   .navigation{
+display: flex;
+   }
     .nav1 {
-        display: flex-end;
+        display: flex;
         flex-direction: row;
+        justify-content: flex-end;
         align-items: center;
         padding: 0px;
     background-color: white;
