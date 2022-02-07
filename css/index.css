@@ -11,12 +11,22 @@
     padding: 20px;
     flex-direction: row;
     }
-li {
+/*li {
     justify-content: space-between;
     padding: 15px;
     list-style-type: none;
-    align-items: right;     
-    }
+    align-items: right;
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 30px 30px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #31373E;   
+    }*/
 a {
     color: black; 
     }
@@ -24,9 +34,19 @@ a {
     width: 30%;
     float: left;
 }
-.navigation li{
+/*.navigation li{
     float: right;
-   }
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 30px 30px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #31373E;
+   }*/
 /* .nav {
     width: 60%;
     float: right;
@@ -44,8 +64,21 @@ a {
     text-decoration: none;
     color: black;
     }
-.nav1:hover {
-        border-bottom: #FFD600;
+.navItem {
+    display: inline-flex;
+    float: right;
+    justify-content: space-between;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #31373E;
+}
+.navItem:hover {
+        border-bottom: 2px solid #FFD600;
         }
 .heroImg {
     position: relative;
@@ -111,7 +144,7 @@ p {
     left: 0px;
     top: 3058px;
 }
-li {
+footer li {
     display: inline-flex;
     justify-content: space-between;
     padding: 30px 30px;
@@ -123,16 +156,18 @@ li {
     line-height: 28px;
     color: #31373E;
 }
-.myskills{
-    position: relative;
-    display: flex;
+.mySkills{
+    text-align: center;
+    margin: 50px;
 }
-.skillsgoup{
-    position: relative;
-    display: flex;
-    flex-direction: row;
+.skillsgroup{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     color: #31373E;
     text-align: center;
+}
+.skillsItem{
+    padding: 0px 100px;
 }
 h3{
 font-family: 'Roboto', sans-serif;
@@ -148,20 +183,15 @@ line-height: 140.62%;
     flex-direction: column;
     justify-content: space-around;
     padding: 60px;
+    text-align: center;
 }
-.projects1{
-    position: relative;
+.projectsItems{
+    /*position: relative;*/
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 60px;
-}
-.projects2{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 60px;
+    text-align: left;
 }
 .black{
     background-color: black;
@@ -212,12 +242,10 @@ line-height: 140.62%;
         flex-direction: column; 
     }
     .skillsgoup{
-        flex-direction: column;
+        grid-template-columns: 1fr;
+        grid-auto-flow: column;
     }
-    .projects1{
-        flex-direction: column;
-    }
-    .project2{
+    .projectsItems{
         flex-direction: column;
     }
     }
