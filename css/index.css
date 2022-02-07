@@ -1,8 +1,15 @@
+.body {
+    display: block;
+    margin: 8px;
+}
+.navigation {
+    height: 140px;
+}
 .block-element {
-    display: inline-block;
-    width: 30%;
+    display: flex;
     vertical-align: top;
     padding: 20px;
+    flex-direction: row;
     }
 li {
     justify-content: space-between;
@@ -13,14 +20,22 @@ li {
 a {
     color: black; 
     }
-.navigation li{
+.logo {
+    width: 30%;
     float: left;
+}
+.navigation li{
+    float: right;
    }
+/* .nav {
+    width: 60%;
+    float: right;
+}*/
 .nav1 {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    align-items: right;
+    /*align-items: right;*/
     padding: 0px;
     background-color: white;
     text-align: right;
@@ -29,28 +44,33 @@ a {
     text-decoration: none;
     color: black;
     }
+.nav1:hover {
+        border-bottom: #FFD600;
+        }
 .heroImg {
-    position: absolute;
+    position: relative;
     width: 499px;
-    height: 499px;
-    left: 120px;
-    top: 214px;
+    height: 713px;
+    /*left: 120px;
+    top: 214px;*/
+    display: flex;
+    flex-direction: row;
     }
 .content {
     position: absolute;
     width: 499px;
-    height: 499px;
-    left: 120px;
-    top: 214px;
+    height: 450px;
+    left: 250px;
+    top: 80px;
     }
  .content-1 {
     position: absolute;
     width: 485px;
-    height: 359px;
-    left: 834px;
-    top: 284px;
+    height: 407px;
+    left: 900px;
+    top: 171px;
      }           
-button {
+.yellow {
     width: 200px;
     height: 60px;
     left: 20px;
@@ -61,7 +81,11 @@ button {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-size: 16px;
-    }
+}
+.yellow:hover {
+  color: #6D6D6D;
+  }
+
 h1 {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -88,13 +112,112 @@ p {
     top: 3058px;
 }
 li {
-display: inline-flex;
-padding: 30px 30px;
-text-decoration: none;
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 30px 30px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #31373E;
+}
+.myskills{
+    position: relative;
+    display: flex;
+}
+.skillsgoup{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    color: #31373E;
+    text-align: center;
+}
+h3{
 font-family: 'Roboto', sans-serif;
 font-style: normal;
 font-weight: normal;
-font-size: 16px;
-line-height: 28px;
-color: #31373E;
+font-size: 36px;
+line-height: 140.62%;
+/* or 51px */
 }
+.projects{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 60px;
+}
+.projects1{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 60px;
+}
+.projects2{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 60px;
+}
+.black{
+    background-color: black;
+    width: 200px;
+    height: 60px;
+    left: 20px;
+    top: 20px;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    color: white;
+}
+.black:hover {
+    color: #FFD600;
+    }
+.orange {
+    background: #FF8A00;
+    padding: 30px;
+    color: white;
+}
+.turquoise{
+    background: #37BAB8;
+    padding: 30px;
+    color: white;
+}
+.blue1{
+    background: #009BF7;
+    padding: 30px;
+    color: white;
+}
+.blue2{
+    background: #0037A0;
+    padding: 30px;
+    color: white;
+}
+h4{
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 140.62%;
+/* identical to box height, or 34px */
+}
+
+@media screen and (max-width: 600){
+   .heroImg{
+        flex-direction: column; 
+    }
+    .skillsgoup{
+        flex-direction: column;
+    }
+    .projects1{
+        flex-direction: column;
+    }
+    .project2{
+        flex-direction: column;
+    }
+    }
