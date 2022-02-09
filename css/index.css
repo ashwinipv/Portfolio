@@ -208,24 +208,23 @@ line-height: 140.62%;
 .black:hover {
     color: #FFD600;
     }
+.textGroup{
+        padding: 0px 30px 30px 30px;
+    }
 .orange {
     background: #FF8A00;
-    padding: 30px;
     color: white;
 }
 .turquoise{
     background: #37BAB8;
-    padding: 30px;
     color: white;
 }
 .blue1{
     background: #009BF7;
-    padding: 30px;
     color: white;
 }
 .blue2{
     background: #0037A0;
-    padding: 30px;
     color: white;
 }
 h4{
