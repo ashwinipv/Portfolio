@@ -103,9 +103,11 @@ a {
     font-size: 16px;
     line-height: 28px;
     color: #31373E;
+    cursor: pointer;
 }
 .navItem:hover {
         border-bottom: 2px solid #FFD600;
+        cursor: pointer;
         }
 .heroImg {
     position: relative;
@@ -141,9 +143,11 @@ a {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-size: 16px;
+    cursor: pointer;
 }
 .yellow:hover {
   color: #6D6D6D;
+  cursor: pointer;
   }
 
 h1 {
@@ -231,9 +235,11 @@ line-height: 140.62%;
     font-style: normal;
     font-size: 16px;
     color: white;
+    cursor: pointer;
 }
 .black:hover {
     color: #FFD600;
+    cursor: pointer;
     }
 .textGroup{
         padding: 0px 30px 30px 30px;
