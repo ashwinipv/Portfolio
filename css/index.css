@@ -269,15 +269,57 @@ line-height: 140.62%;
 /* identical to box height, or 34px */
 }
 
-@media screen and (max-width: 600){
+@media only screen and (max-width: 600px){
+    .nav1{
+        display: none;
+    }
    .heroImg{
         flex-direction: column; 
+        height: 750px;
     }
-    .skillsgoup{
+    .heroImg img{
+        width: 100%;
+        height: auto;
+    }
+    .content{
+        top: 0px;
+        left: 0px;
+        width: 0px;
+    }
+    .content-1{
+        top: 370px;
+        left: 10px;
+        width: 300px;
+    }
+    .skillsgroup{
         grid-template-columns: 1fr;
-        grid-auto-flow: column;
+       /* flex-direction: column;*/
+    }
+    .mySkills{
+        margin: 0px;
     }
     .projectsItems{
         flex-direction: column;
     }
+   
+    .projects{
+        padding: 0px;
+        margin: 0px 10px;
     }
+    .projectsItems{
+        padding: 0px;
+    }
+    .orange, .turquoise, .blue1, .blue2{
+        margin: 10px 0px; 
+    }
+    body{
+        margin: 0px;
+    }
+    .projects img{
+        width: 100%;
+        height: auto;
+    }
+    footer li{
+        flex-wrap: wrap;
+    }
+}
