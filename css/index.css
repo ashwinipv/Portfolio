@@ -300,6 +300,10 @@ line-height: 140.62%;
     background-color: #04AA6D;
     color: white;
   }
+
+  ul .dropDown{
+    display: none;
+}
   
   /* Hide the link that should open and close the topnav on small screens */
   .topnav .icon {
@@ -372,14 +376,14 @@ line-height: 140.62%;
         display: none;
     }
 
-    /*.topnav a:not(:first-child) {display: none;}*/
+    /*.topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
       display: block;
     }
  
   
-  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally)
   
     .topnav.responsive a.icon {
       position: absolute;
@@ -388,5 +392,53 @@ line-height: 140.62%;
     }
     .topnav.responsive a {
       float: right;
-    }
+    }*/
+
+    .mobile-container {
+        max-width: 480px;
+        margin: auto;
+        height: 500px;
+        color: black;
+        border-radius: 10px;
+      }
+      .topnav {
+        overflow: hidden;
+        background-color: white;
+        
+        float: right;
+        
+      }
+      #myid {
+        color: black;
+        flex-direction: column;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;  
+      }
+      .topnav #myLinks {
+        display: none;
+      }
+      .topnav a {
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+      }
+      .topnav a.icon {
+        background: white;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: black;
+      }
+      .topnav a:hover {
+        background-color: white;
+        color: black;
+      }
+      .active {
+        background-color: grey;
+        color: white;
+      }
   }
