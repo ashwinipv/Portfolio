@@ -123,6 +123,7 @@ display: none;
     }
 .content {
     position: absolute;
+    z-index: 1;
     width: 499px;
     height: 450px;
     left: 250px;
@@ -130,6 +131,7 @@ display: none;
     }
  .content-1 {
     position: absolute;
+    z-index: 1;
     width: 485px;
     height: 407px;
     left: 900px;
@@ -173,6 +175,7 @@ p {
 .footer {
     display:flex;
     position: absolute;
+    z-index: 1;
     width: 1440px;
     height: 165px;
     left: 0px;
@@ -410,10 +413,23 @@ line-height: 140.62%;
       }
       #myid {
         color: black;
+        display: flex;
         flex-direction: column;
+        position: absolute;
+        z-index: 2;
+        top: 5%;
+        right: 2%;
         padding: 14px 16px;
         text-decoration: none;
-        font-size: 17px;  
+        font-size: 17px;
+        background-color: white; 
+        filter: drop-shadow(20px 10px 4px rgba(0, 0, 0, 0.5));
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 28px;
+        color: #31373E;
       }
       .topnav #myLinks {
         display: none;
@@ -427,8 +443,10 @@ line-height: 140.62%;
       }
       .topnav a.icon {
         background: white;
+        
         display: block;
         position: absolute;
+        z-index: 1;
         right: 0;
         top: 0;
         color: black;

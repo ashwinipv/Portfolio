@@ -27,9 +27,9 @@ function myFunction() {
 
 function myFunction() {
   var x = document.getElementById("myid");
-  if (x.style.display === "block") {
+  if (x.style.display === "flex") {
     x.style.display = "none";
   } else {
-    x.style.display = "none";
+    x.style.display = "flex";
   }
 }
